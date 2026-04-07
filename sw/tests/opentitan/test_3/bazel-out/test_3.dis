@@ -1,0 +1,1763 @@
+
+bazel-out/k8-fastbuild-ST-2cc462681f62/bin/sw/tests/opentitan/test_3/test_3_sim_verilator.elf:     file format elf32-littleriscv
+bazel-out/k8-fastbuild-ST-2cc462681f62/bin/sw/tests/opentitan/test_3/test_3_sim_verilator.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0xe0000080
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0xe0000000 paddr 0xe0000000 align 2**12
+         filesz 0x000003f0 memsz 0x000003fc flags rwx
+    LOAD off    0x00000000 vaddr 0xe0008000 paddr 0xe0008000 align 2**12
+         filesz 0x00000000 memsz 0x00002000 flags rw-
+   STACK off    0x00000000 vaddr 0x00000000 paddr 0x00000000 align 2**4
+         filesz 0x00000000 memsz 0x00000000 flags rw-
+
+Sections:
+Idx Name              Size      VMA       LMA       File off  Algn  Flags
+  0 .vectors          00000084  e0000000  e0000000  00001000  2**0  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text             0000034c  e0000084  e0000084  00001084  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .rodata           00000020  e00003d0  e00003d0  000013d0  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .data             00000000  e00003f0  e00003f0  000013f0  2**0  CONTENTS, ALLOC, LOAD, DATA
+  4 .bss              00000009  e00003f0  e00003f0  000013f0  2**2  ALLOC
+  5 .logs.fields      00000003  e00003f9  e00003f9  000013f0  2**0  ALLOC
+  6 .stack            00002000  e0008000  e0008000  00002000  2**0  ALLOC
+  7 .debug_loc        00001605  00000000  00000000  000013f0  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  8 .debug_abbrev     00000808  00000000  00000000  000029f5  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_info       0000280f  00000000  00000000  000031fd  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_str        00000b16  00000000  00000000  00005a0c  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .comment          00000074  00000000  00000000  00006522  2**0  CONTENTS, READONLY
+ 12 .riscv.attributes 00000026  00000000  00000000  00006596  2**0  CONTENTS, READONLY
+ 13 .debug_frame      000002a0  00000000  00000000  000065bc  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 14 .debug_line       00001a02  00000000  00000000  0000685c  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 15 .debug_ranges     000002e8  00000000  00000000  0000825e  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .debug_aranges    00000028  00000000  00000000  00008546  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+e0000000 l    d  .vectors       00000000 .vectors
+e0000084 l    d  .text  00000000 .text
+e00003d0 l    d  .rodata        00000000 .rodata
+e00003f0 l    d  .data  00000000 .data
+e00003f0 l    d  .bss   00000000 .bss
+e00003f9 l    d  .logs.fields   00000000 .logs.fields
+e0008000 l    d  .stack 00000000 .stack
+00000000 l    d  .debug_loc     00000000 .debug_loc
+00000000 l    d  .debug_abbrev  00000000 .debug_abbrev
+00000000 l    d  .debug_info    00000000 .debug_info
+00000000 l    d  .debug_str     00000000 .debug_str
+00000000 l    d  .comment       00000000 .comment
+00000000 l    d  .riscv.attributes      00000000 .riscv.attributes
+00000000 l    d  .debug_frame   00000000 .debug_frame
+00000000 l    d  .debug_line    00000000 .debug_line
+00000000 l    d  .debug_ranges  00000000 .debug_ranges
+00000000 l    d  .debug_aranges 00000000 .debug_aranges
+00000000 l    df *ABS*  00000000 crt0.o
+e0000084 l       .text  00000000 default_exc_handler
+e0000084 l       .text  00000000 
+e000010e l       .text  00000000 sleep_loop
+e0000084 l       .text  00000000 
+e0000086 l       .text  00000000 reset_handler
+e0000086 l       .text  00000000 
+e0000086 l       .text  00000000 
+e00000cc l       .text  00000000 
+e00000ea l       .text  00000000 zero_loop_end
+e00000e0 l       .text  00000000 zero_loop
+e00000e0 l       .text  00000000 
+e00000ea l       .text  00000000 
+e00000ea l       .text  00000000 main_entry
+e00000ea l       .text  00000000 
+e00000ee l       .text  00000000 
+e0000102 l       .text  00000000 success
+e00000f2 l       .text  00000000 
+e00000f4 l       .text  00000000 
+e0000100 l       .text  00000000 
+e0000102 l       .text  00000000 
+e0000102 l       .text  00000000 
+e000010e l       .text  00000000 
+e0000112 l       .text  00000000 
+e0000000 l       .vectors       00000000 
+e000002c l       .vectors       00000000 
+e0000030 l       .vectors       00000000 
+e000007c l       .vectors       00000000 
+e0000080 l       .vectors       00000000 
+00000dcd l       .debug_info    00000000 
+0000044e l       .debug_abbrev  00000000 
+e0000114 l       .text  00000000 
+e0000084 l       .vectors       00000000 
+00000140 l       .debug_ranges  00000000 
+00000000 l    df *ABS*  00000000 test_3.c
+e0000114 l       .text  00000000 
+e0000114 l       .text  00000000 
+e0000114 l       .text  00000000 
+e0000116 l       .text  00000000 
+e0000128 l       .text  00000000 
+e000012a l       .text  00000000 
+e00003f4 l     O .bss   00000004 titanssl_mbox_storage.0
+e000012a l       .text  00000000 
+e00003f8 l     O .bss   00000001 titanssl_mbox_storage.2
+e0000138 l       .text  00000000 
+e0000146 l       .text  00000000 
+e000014c l       .text  00000000 
+e000014c l       .text  00000000 
+e0000150 l       .text  00000000 
+e0000152 l       .text  00000000 
+e0000156 l       .text  00000000 
+e000015a l       .text  00000000 
+e000015a l       .text  00000000 
+e000015e l       .text  00000000 
+e0000160 l       .text  00000000 
+e000016e l       .text  00000000 
+e000016e l       .text  00000000 
+e0000172 l       .text  00000000 
+e0000174 l       .text  00000000 
+e0000178 l       .text  00000000 
+e000017a l       .text  00000000 
+e000017c l       .text  00000000 
+e000017e l       .text  00000000 
+e0000182 l       .text  00000000 
+e0000182 l       .text  00000000 
+e000018c l       .text  00000000 
+e000018c l       .text  00000000 
+e0000194 l       .text  00000000 
+e0000198 l       .text  00000000 
+e0000198 l       .text  00000000 
+e000019c l       .text  00000000 
+e000019e l       .text  00000000 
+e00001a2 l       .text  00000000 
+e00001a6 l       .text  00000000 
+e00001a6 l       .text  00000000 
+e00001aa l       .text  00000000 
+e00001aa l       .text  00000000 
+e00001ae l       .text  00000000 
+e00001b6 l       .text  00000000 
+e00001b6 l       .text  00000000 
+e00001be l       .text  00000000 
+e00001be l       .text  00000000 
+e00001c0 l       .text  00000000 
+e00001c6 l       .text  00000000 
+e00001c6 l       .text  00000000 
+e00001cc l       .text  00000000 
+e00001d0 l       .text  00000000 
+e00001d0 l       .text  00000000 
+e00001d4 l       .text  00000000 
+e00001d8 l       .text  00000000 
+e00001dc l       .text  00000000 
+e00001dc l       .text  00000000 
+e00001e0 l       .text  00000000 
+e00001e0 l       .text  00000000 
+e00001e8 l       .text  00000000 
+e00001e8 l       .text  00000000 
+e00001ea l       .text  00000000 
+e00001ea l       .text  00000000 
+e00001ee l       .text  00000000 
+e00001ee l       .text  00000000 
+e00001f4 l       .text  00000000 
+e00001f4 l       .text  00000000 
+e00001f6 l       .text  00000000 
+e00001f6 l       .text  00000000 
+e00001f8 l       .text  00000000 
+e00001f8 l       .text  00000000 
+e00001fa l       .text  00000000 
+e00001fa l       .text  00000000 
+e00001fe l       .text  00000000 
+e0000202 l       .text  00000000 
+e0000202 l       .text  00000000 
+e0000204 l       .text  00000000 
+e0000208 l       .text  00000000 
+e0000208 l       .text  00000000 
+e000020c l       .text  00000000 
+e000020c l       .text  00000000 
+e000020e l       .text  00000000 
+e000020e l       .text  00000000 
+e0000210 l       .text  00000000 
+e0000210 l       .text  00000000 
+e0000212 l       .text  00000000 
+e0000212 l       .text  00000000 
+e0000214 l       .text  00000000 
+e0000218 l       .text  00000000 
+e000021c l       .text  00000000 
+e0000220 l       .text  00000000 
+e0000220 l       .text  00000000 
+e0000222 l       .text  00000000 
+e0000222 l       .text  00000000 
+e0000226 l       .text  00000000 
+e0000226 l       .text  00000000 
+e000022a l       .text  00000000 
+e000022a l       .text  00000000 
+e0000234 l       .text  00000000 
+e0000234 l       .text  00000000 
+e0000238 l       .text  00000000 
+e000023c l       .text  00000000 
+e000023e l       .text  00000000 
+e0000242 l       .text  00000000 
+e00003d0 l     O .rodata        00000020 kExpectedShaDigest
+e0000242 l       .text  00000000 
+e000025c l       .text  00000000 
+e000025e l       .text  00000000 
+e000025e l       .text  00000000 
+e0000262 l       .text  00000000 
+e0000264 l       .text  00000000 
+e0000266 l       .text  00000000 
+e000026a l       .text  00000000 
+e000026e l       .text  00000000 
+e000026e l       .text  00000000 
+e0000272 l       .text  00000000 
+e0000274 l       .text  00000000 
+e0000274 l       .text  00000000 
+e000027a l       .text  00000000 
+e000027a l       .text  00000000 
+e000027c l       .text  00000000 
+e0000280 l       .text  00000000 
+e0000280 l       .text  00000000 
+e000028a l       .text  00000000 
+e000028a l       .text  00000000 
+e00002a0 l       .text  00000000 
+e00002a0 l       .text  00000000 
+00000000 l       .debug_loc     00000000 
+0000001f l       .debug_loc     00000000 
+00000032 l       .debug_loc     00000000 
+00000045 l       .debug_loc     00000000 
+00000063 l       .debug_loc     00000000 
+00000082 l       .debug_loc     00000000 
+00000095 l       .debug_loc     00000000 
+000000be l       .debug_loc     00000000 
+000000d1 l       .debug_loc     00000000 
+000000f0 l       .debug_loc     00000000 
+0000010f l       .debug_loc     00000000 
+0000014b l       .debug_loc     00000000 
+0000016b l       .debug_loc     00000000 
+00000000 l       .debug_str     00000000 
+00000074 l       .debug_str     00000000 
+00000097 l       .debug_str     00000000 
+000000a6 l       .debug_str     00000000 
+000000b2 l       .debug_str     00000000 
+00000ad9 l       .debug_str     00000000 
+000000bb l       .debug_str     00000000 
+00000101 l       .debug_str     00000000 
+000000f7 l       .debug_str     00000000 
+000000fd l       .debug_str     00000000 
+000000f5 l       .debug_str     00000000 
+000000fb l       .debug_str     00000000 
+000000e4 l       .debug_str     00000000 
+000000c9 l       .debug_str     00000000 
+00000acd l       .debug_str     00000000 
+000000dc l       .debug_str     00000000 
+000000ce l       .debug_str     00000000 
+00000111 l       .debug_str     00000000 
+00000127 l       .debug_str     00000000 
+000001ac l       .debug_str     00000000 
+00000197 l       .debug_str     00000000 
+0000094c l       .debug_str     00000000 
+00000964 l       .debug_str     00000000 
+00000181 l       .debug_str     00000000 
+0000016d l       .debug_str     00000000 
+0000013e l       .debug_str     00000000 
+00000154 l       .debug_str     00000000 
+000001c3 l       .debug_str     00000000 
+000001fa l       .debug_str     00000000 
+000001ea l       .debug_str     00000000 
+000001f3 l       .debug_str     00000000 
+000001d6 l       .debug_str     00000000 
+0000026f l       .debug_str     00000000 
+0000020c l       .debug_str     00000000 
+00000213 l       .debug_str     00000000 
+0000021d l       .debug_str     00000000 
+00000228 l       .debug_str     00000000 
+00000233 l       .debug_str     00000000 
+00000243 l       .debug_str     00000000 
+00000252 l       .debug_str     00000000 
+00000261 l       .debug_str     00000000 
+0000027a l       .debug_str     00000000 
+0000028c l       .debug_str     00000000 
+0000028f l       .debug_str     00000000 
+00000292 l       .debug_str     00000000 
+00000537 l       .debug_str     00000000 
+00000294 l       .debug_str     00000000 
+0000029b l       .debug_str     00000000 
+000002d3 l       .debug_str     00000000 
+000002e3 l       .debug_str     00000000 
+000002f4 l       .debug_str     00000000 
+000002fa l       .debug_str     00000000 
+000002fd l       .debug_str     00000000 
+00000307 l       .debug_str     00000000 
+00000312 l       .debug_str     00000000 
+000002d8 l       .debug_str     00000000 
+000002cf l       .debug_str     00000000 
+000002ab l       .debug_str     00000000 
+000002c1 l       .debug_str     00000000 
+000002b5 l       .debug_str     00000000 
+00000587 l       .debug_str     00000000 
+000002e7 l       .debug_str     00000000 
+0000031d l       .debug_str     00000000 
+00000a62 l       .debug_str     00000000 
+00000330 l       .debug_str     00000000 
+00000ae2 l       .debug_str     00000000 
+0000033a l       .debug_str     00000000 
+00000356 l       .debug_str     00000000 
+00000350 l       .debug_str     00000000 
+00000360 l       .debug_str     00000000 
+00000374 l       .debug_str     00000000 
+0000037d l       .debug_str     00000000 
+00000394 l       .debug_str     00000000 
+000003a1 l       .debug_str     00000000 
+000003a4 l       .debug_str     00000000 
+000003a8 l       .debug_str     00000000 
+0000042a l       .debug_str     00000000 
+000003b1 l       .debug_str     00000000 
+000003bf l       .debug_str     00000000 
+000003da l       .debug_str     00000000 
+000003ed l       .debug_str     00000000 
+00000409 l       .debug_str     00000000 
+0000041a l       .debug_str     00000000 
+00000000 l       .debug_frame   00000000 
+e00002a0 l       .text  00000000 
+00000000 l    df *ABS*  00000000 utils.c
+e00002a0 l       .text  00000000 
+e00002a0 l       .text  00000000 
+e00002a0 l       .text  00000000 
+e00002a0 l       .text  00000000 
+e00002a4 l       .text  00000000 
+e00002a4 l       .text  00000000 
+00000189 l       .debug_loc     00000000 
+000001af l       .debug_loc     00000000 
+000001d7 l       .debug_loc     00000000 
+000001fd l       .debug_loc     00000000 
+0000025a l       .debug_loc     00000000 
+00000282 l       .debug_loc     00000000 
+000002a8 l       .debug_loc     00000000 
+000002dd l       .debug_loc     00000000 
+0000031d l       .debug_loc     00000000 
+00000338 l       .debug_loc     00000000 
+00000359 l       .debug_loc     00000000 
+00000374 l       .debug_loc     00000000 
+0000038f l       .debug_loc     00000000 
+000003aa l       .debug_loc     00000000 
+000003c5 l       .debug_loc     00000000 
+000003ed l       .debug_loc     00000000 
+0000041e l       .debug_loc     00000000 
+00000453 l       .debug_loc     00000000 
+0000047b l       .debug_loc     00000000 
+00000497 l       .debug_loc     00000000 
+000004b2 l       .debug_loc     00000000 
+00000504 l       .debug_loc     00000000 
+0000052a l       .debug_loc     00000000 
+0000056a l       .debug_loc     00000000 
+00000592 l       .debug_loc     00000000 
+000005b8 l       .debug_loc     00000000 
+000005f8 l       .debug_loc     00000000 
+0000062a l       .debug_loc     00000000 
+00000656 l       .debug_loc     00000000 
+00000671 l       .debug_loc     00000000 
+0000068c l       .debug_loc     00000000 
+000006ad l       .debug_loc     00000000 
+000006c8 l       .debug_loc     00000000 
+000006ee l       .debug_loc     00000000 
+0000072a l       .debug_loc     00000000 
+00000750 l       .debug_loc     00000000 
+00000781 l       .debug_loc     00000000 
+000007b2 l       .debug_loc     00000000 
+000007ee l       .debug_loc     00000000 
+00000816 l       .debug_loc     00000000 
+00000873 l       .debug_loc     00000000 
+0000089d l       .debug_loc     00000000 
+000008df l       .debug_loc     00000000 
+0000095d l       .debug_loc     00000000 
+00000978 l       .debug_loc     00000000 
+0000099e l       .debug_loc     00000000 
+000009c4 l       .debug_loc     00000000 
+000009e1 l       .debug_loc     00000000 
+00000000 l       .debug_str     00000000 
+0000042f l       .debug_str     00000000 
+00000097 l       .debug_str     00000000 
+000000d8 l       .debug_ranges  00000000 
+00000447 l       .debug_str     00000000 
+000000d7 l       .debug_str     00000000 
+000001d6 l       .debug_str     00000000 
+00000ad9 l       .debug_str     00000000 
+00000ae2 l       .debug_str     00000000 
+000004bf l       .debug_str     00000000 
+000004d2 l       .debug_str     00000000 
+0000045f l       .debug_str     00000000 
+00000466 l       .debug_str     00000000 
+0000047f l       .debug_str     00000000 
+00000454 l       .debug_str     00000000 
+0000045b l       .debug_str     00000000 
+0000047b l       .debug_str     00000000 
+00000482 l       .debug_str     00000000 
+00000488 l       .debug_str     00000000 
+00000ac5 l       .debug_str     00000000 
+00000473 l       .debug_str     00000000 
+00000469 l       .debug_str     00000000 
+0000048c l       .debug_str     00000000 
+00000095 l       .debug_str     00000000 
+0000049a l       .debug_str     00000000 
+000004a2 l       .debug_str     00000000 
+000004ad l       .debug_str     00000000 
+00000529 l       .debug_str     00000000 
+00000564 l       .debug_str     00000000 
+0000056b l       .debug_str     00000000 
+00000573 l       .debug_str     00000000 
+00000acb l       .debug_str     00000000 
+00000030 l       .debug_ranges  00000000 
+00000048 l       .debug_ranges  00000000 
+00000060 l       .debug_ranges  00000000 
+00000078 l       .debug_ranges  00000000 
+00000090 l       .debug_ranges  00000000 
+000000a8 l       .debug_ranges  00000000 
+00000531 l       .debug_str     00000000 
+00000537 l       .debug_str     00000000 
+00000290 l       .debug_str     00000000 
+00000581 l       .debug_str     00000000 
+00000584 l       .debug_str     00000000 
+00000577 l       .debug_str     00000000 
+0000058c l       .debug_str     00000000 
+0000058e l       .debug_str     00000000 
+000006fa l       .debug_str     00000000 
+000000c0 l       .debug_ranges  00000000 
+000004d9 l       .debug_str     00000000 
+00000539 l       .debug_str     00000000 
+00000540 l       .debug_str     00000000 
+000004e6 l       .debug_str     00000000 
+000004f0 l       .debug_str     00000000 
+000004fd l       .debug_str     00000000 
+0000050f l       .debug_str     00000000 
+00000000 l       .debug_ranges  00000000 
+00000018 l       .debug_ranges  00000000 
+00000514 l       .debug_str     00000000 
+000004b1 l       .debug_str     00000000 
+00000acd l       .debug_str     00000000 
+000004b8 l       .debug_str     00000000 
+00000676 l       .debug_str     00000000 
+000000da l       .debug_str     00000000 
+0000055b l       .debug_str     00000000 
+0000054c l       .debug_str     00000000 
+0000003c l       .debug_frame   00000000 
+e00002a4 l       .text  00000000 
+00000000 l    df *ABS*  00000000 dif_hmac_autogen.c
+e00002a4 l       .text  00000000 
+e00002a4 l       .text  00000000 
+e00002a4 l       .text  00000000 
+e00002a4 l       .text  00000000 
+e00002a6 l       .text  00000000 
+e00002a8 l       .text  00000000 
+e00002ac l       .text  00000000 
+e00002ae l       .text  00000000 
+e00002b0 l       .text  00000000 
+e00002b2 l       .text  00000000 
+e00002b2 l       .text  00000000 
+00000a02 l       .debug_loc     00000000 
+00000a1d l       .debug_loc     00000000 
+00000a38 l       .debug_loc     00000000 
+00000a53 l       .debug_loc     00000000 
+00000a6f l       .debug_loc     00000000 
+00000a8b l       .debug_loc     00000000 
+00000aa6 l       .debug_loc     00000000 
+00000ac1 l       .debug_loc     00000000 
+00000adc l       .debug_loc     00000000 
+00000af7 l       .debug_loc     00000000 
+00000b12 l       .debug_loc     00000000 
+00000b2d l       .debug_loc     00000000 
+00000b48 l       .debug_loc     00000000 
+00000b63 l       .debug_loc     00000000 
+00000b89 l       .debug_loc     00000000 
+00000ba4 l       .debug_loc     00000000 
+00000bbf l       .debug_loc     00000000 
+00000bdd l       .debug_loc     00000000 
+00000c04 l       .debug_loc     00000000 
+00000c1f l       .debug_loc     00000000 
+00000c3a l       .debug_loc     00000000 
+00000c55 l       .debug_loc     00000000 
+00000c73 l       .debug_loc     00000000 
+00000c9a l       .debug_loc     00000000 
+00000cb5 l       .debug_loc     00000000 
+00000cd0 l       .debug_loc     00000000 
+00000ceb l       .debug_loc     00000000 
+00000d06 l       .debug_loc     00000000 
+00000d2c l       .debug_loc     00000000 
+00000d47 l       .debug_loc     00000000 
+00000d62 l       .debug_loc     00000000 
+00000d88 l       .debug_loc     00000000 
+00000da8 l       .debug_loc     00000000 
+00000dce l       .debug_loc     00000000 
+00000dec l       .debug_loc     00000000 
+00000e07 l       .debug_loc     00000000 
+00000e2d l       .debug_loc     00000000 
+00000e53 l       .debug_loc     00000000 
+00000e6e l       .debug_loc     00000000 
+00000000 l       .debug_str     00000000 
+00000592 l       .debug_str     00000000 
+00000097 l       .debug_str     00000000 
+00000168 l       .debug_ranges  00000000 
+000005bf l       .debug_str     00000000 
+000005f9 l       .debug_str     00000000 
+000005ec l       .debug_str     00000000 
+000005c9 l       .debug_str     00000000 
+000005da l       .debug_str     00000000 
+00000ad9 l       .debug_str     00000000 
+000001d6 l       .debug_str     00000000 
+0000026f l       .debug_str     00000000 
+0000020c l       .debug_str     00000000 
+00000213 l       .debug_str     00000000 
+0000021d l       .debug_str     00000000 
+00000228 l       .debug_str     00000000 
+00000233 l       .debug_str     00000000 
+00000243 l       .debug_str     00000000 
+00000252 l       .debug_str     00000000 
+00000261 l       .debug_str     00000000 
+00000620 l       .debug_str     00000000 
+00000608 l       .debug_str     00000000 
+0000066b l       .debug_str     00000000 
+0000062f l       .debug_str     00000000 
+00000643 l       .debug_str     00000000 
+00000658 l       .debug_str     00000000 
+0000069d l       .debug_str     00000000 
+00000678 l       .debug_str     00000000 
+0000068b l       .debug_str     00000000 
+000000b2 l       .debug_str     00000000 
+000003b1 l       .debug_str     00000000 
+000002ab l       .debug_str     00000000 
+000002d3 l       .debug_str     00000000 
+000006a8 l       .debug_str     00000000 
+00000587 l       .debug_str     00000000 
+00000a62 l       .debug_str     00000000 
+00000933 l       .debug_str     00000000 
+000002c1 l       .debug_str     00000000 
+000002b5 l       .debug_str     00000000 
+00000330 l       .debug_str     00000000 
+00000ae2 l       .debug_str     00000000 
+00000711 l       .debug_str     00000000 
+00000629 l       .debug_str     00000000 
+00000829 l       .debug_str     00000000 
+00000833 l       .debug_str     00000000 
+00000726 l       .debug_str     00000000 
+00000674 l       .debug_str     00000000 
+000005f4 l       .debug_str     00000000 
+0000031d l       .debug_str     00000000 
+0000073c l       .debug_str     00000000 
+00000851 l       .debug_str     00000000 
+00000360 l       .debug_str     00000000 
+00000374 l       .debug_str     00000000 
+00000356 l       .debug_str     00000000 
+00000350 l       .debug_str     00000000 
+0000037d l       .debug_str     00000000 
+00000753 l       .debug_str     00000000 
+00000760 l       .debug_str     00000000 
+00000878 l       .debug_str     00000000 
+0000035a l       .debug_str     00000000 
+0000076b l       .debug_str     00000000 
+000006bc l       .debug_str     00000000 
+00000377 l       .debug_str     00000000 
+000006e9 l       .debug_str     00000000 
+000006d8 l       .debug_str     00000000 
+000006d3 l       .debug_str     00000000 
+000006fc l       .debug_str     00000000 
+00000788 l       .debug_str     00000000 
+000007a1 l       .debug_str     00000000 
+00000887 l       .debug_str     00000000 
+0000088b l       .debug_str     00000000 
+000007b4 l       .debug_str     00000000 
+0000074d l       .debug_str     00000000 
+000008a6 l       .debug_str     00000000 
+000008b6 l       .debug_str     00000000 
+000007cd l       .debug_str     00000000 
+000008c1 l       .debug_str     00000000 
+000007e6 l       .debug_str     00000000 
+000007ff l       .debug_str     00000000 
+000002e7 l       .debug_str     00000000 
+000002d8 l       .debug_str     00000000 
+000002cf l       .debug_str     00000000 
+00000818 l       .debug_str     00000000 
+00000842 l       .debug_str     00000000 
+0000085a l       .debug_str     00000000 
+00000899 l       .debug_str     00000000 
+000008cc l       .debug_str     00000000 
+00000138 l       .debug_frame   00000000 
+e00002b2 l       .text  00000000 
+00000000 l    df *ABS*  00000000 dif_hmac.c
+e00002b2 l       .text  00000000 
+e00002b2 l       .text  00000000 
+e00002b2 l       .text  00000000 
+e00002b2 l       .text  00000000 
+e00002b4 l       .text  00000000 
+e00002b6 l       .text  00000000 
+e00002b6 l       .text  00000000 
+e00002ba l       .text  00000000 
+e00002ba l       .text  00000000 
+e00002bc l       .text  00000000 
+e00002bc l       .text  00000000 
+e00002be l       .text  00000000 
+e00002c0 l       .text  00000000 
+e00002c4 l       .text  00000000 
+e00002c4 l       .text  00000000 
+e00002c6 l       .text  00000000 
+e00002c6 l       .text  00000000 
+e00002c8 l       .text  00000000 
+e00002ca l       .text  00000000 
+e00002ce l       .text  00000000 
+e00002ce l       .text  00000000 
+e00002d0 l       .text  00000000 
+e00002d2 l       .text  00000000 
+e00002d6 l       .text  00000000 
+e00002d8 l       .text  00000000 
+e00002d8 l       .text  00000000 
+e00002da l       .text  00000000 
+e00002dc l       .text  00000000 
+e00002dc l       .text  00000000 
+e00002e0 l       .text  00000000 
+e00002e0 l       .text  00000000 
+e00002e2 l       .text  00000000 
+e00002e2 l       .text  00000000 
+e00002e8 l       .text  00000000 
+e00002e8 l       .text  00000000 
+e00002ea l       .text  00000000 
+e00002ea l       .text  00000000 
+e00002ec l       .text  00000000 
+e00002ec l       .text  00000000 
+e00002ee l       .text  00000000 
+e00002ee l       .text  00000000 
+e00002f0 l       .text  00000000 
+e00002f0 l       .text  00000000 
+e00002f4 l       .text  00000000 
+e00002f4 l       .text  00000000 
+e00002f6 l       .text  00000000 
+e00002f6 l       .text  00000000 
+e00002fa l       .text  00000000 
+e00002fa l       .text  00000000 
+e00002fa l       .text  00000000 
+e00002fa l       .text  00000000 
+e00002fa l       .text  00000000 
+e00002fa l       .text  00000000 
+e0000302 l       .text  00000000 
+e0000308 l       .text  00000000 
+e0000308 l       .text  00000000 
+e000030a l       .text  00000000 
+e000030e l       .text  00000000 
+e000030e l       .text  00000000 
+e0000312 l       .text  00000000 
+e0000312 l       .text  00000000 
+e0000316 l       .text  00000000 
+e0000316 l       .text  00000000 
+e000031a l       .text  00000000 
+e000031e l       .text  00000000 
+e0000320 l       .text  00000000 
+e0000324 l       .text  00000000 
+e0000324 l       .text  00000000 
+e0000328 l       .text  00000000 
+e000032e l       .text  00000000 
+e000032e l       .text  00000000 
+e0000330 l       .text  00000000 
+e0000332 l       .text  00000000 
+e0000332 l       .text  00000000 
+e0000336 l       .text  00000000 
+e0000336 l       .text  00000000 
+e000033a l       .text  00000000 
+e000033a l       .text  00000000 
+e000033e l       .text  00000000 
+e0000344 l       .text  00000000 
+e0000344 l       .text  00000000 
+e0000346 l       .text  00000000 
+e0000348 l       .text  00000000 
+e000034a l       .text  00000000 
+e000034c l       .text  00000000 
+e000034c l       .text  00000000 
+e000034e l       .text  00000000 
+e0000350 l       .text  00000000 
+e0000350 l       .text  00000000 
+e0000350 l       .text  00000000 
+e0000350 l       .text  00000000 
+e0000350 l       .text  00000000 
+e0000350 l       .text  00000000 
+e0000358 l       .text  00000000 
+e000035e l       .text  00000000 
+e000035e l       .text  00000000 
+e0000360 l       .text  00000000 
+e0000360 l       .text  00000000 
+e0000362 l       .text  00000000 
+e0000362 l       .text  00000000 
+e0000364 l       .text  00000000 
+e0000364 l       .text  00000000 
+e0000366 l       .text  00000000 
+e0000366 l       .text  00000000 
+e0000368 l       .text  00000000 
+e0000368 l       .text  00000000 
+e000036a l       .text  00000000 
+e000036a l       .text  00000000 
+e000036e l       .text  00000000 
+e000036e l       .text  00000000 
+e000036e l       .text  00000000 
+e000036e l       .text  00000000 
+e000036e l       .text  00000000 
+e000036e l       .text  00000000 
+e0000370 l       .text  00000000 
+e0000372 l       .text  00000000 
+e0000372 l       .text  00000000 
+e0000374 l       .text  00000000 
+e0000374 l       .text  00000000 
+e0000376 l       .text  00000000 
+e0000376 l       .text  00000000 
+e000037a l       .text  00000000 
+e000037a l       .text  00000000 
+e000037c l       .text  00000000 
+e000037c l       .text  00000000 
+e000037e l       .text  00000000 
+e000037e l       .text  00000000 
+e0000380 l       .text  00000000 
+e0000380 l       .text  00000000 
+e0000382 l       .text  00000000 
+e0000382 l       .text  00000000 
+e0000382 l       .text  00000000 
+e0000382 l       .text  00000000 
+e0000382 l       .text  00000000 
+e0000382 l       .text  00000000 
+e000038a l       .text  00000000 
+e0000390 l       .text  00000000 
+e0000392 l       .text  00000000 
+e0000392 l       .text  00000000 
+e0000394 l       .text  00000000 
+e0000394 l       .text  00000000 
+e0000396 l       .text  00000000 
+e0000396 l       .text  00000000 
+e0000398 l       .text  00000000 
+e0000398 l       .text  00000000 
+e000039a l       .text  00000000 
+e000039a l       .text  00000000 
+e000039c l       .text  00000000 
+e000039c l       .text  00000000 
+e000039e l       .text  00000000 
+e000039e l       .text  00000000 
+e00003a2 l       .text  00000000 
+e00003a2 l       .text  00000000 
+e00003a4 l       .text  00000000 
+e00003a4 l       .text  00000000 
+e00003a8 l       .text  00000000 
+e00003a8 l       .text  00000000 
+e00003aa l       .text  00000000 
+e00003aa l       .text  00000000 
+e00003b2 l       .text  00000000 
+e00003b2 l       .text  00000000 
+e00003b4 l       .text  00000000 
+e00003b4 l       .text  00000000 
+e00003b6 l       .text  00000000 
+e00003b8 l       .text  00000000 
+e00003b8 l       .text  00000000 
+e00003ba l       .text  00000000 
+e00003ba l       .text  00000000 
+e00003bc l       .text  00000000 
+e00003be l       .text  00000000 
+e00003c2 l       .text  00000000 
+e00003c2 l       .text  00000000 
+e00003c4 l       .text  00000000 
+e00003c4 l       .text  00000000 
+e00003c6 l       .text  00000000 
+e00003c6 l       .text  00000000 
+e00003c8 l       .text  00000000 
+e00003c8 l       .text  00000000 
+e00003ca l       .text  00000000 
+e00003ca l       .text  00000000 
+e00003cc l       .text  00000000 
+e00003cc l       .text  00000000 
+e00003d0 l       .text  00000000 
+e00003d0 l       .text  00000000 
+00000e89 l       .debug_loc     00000000 
+00000ea4 l       .debug_loc     00000000 
+00000ebf l       .debug_loc     00000000 
+00000ee5 l       .debug_loc     00000000 
+00000f05 l       .debug_loc     00000000 
+00000f21 l       .debug_loc     00000000 
+00000f3d l       .debug_loc     00000000 
+00000f65 l       .debug_loc     00000000 
+00000f81 l       .debug_loc     00000000 
+00000f9c l       .debug_loc     00000000 
+00000fc2 l       .debug_loc     00000000 
+00000fdf l       .debug_loc     00000000 
+00001005 l       .debug_loc     00000000 
+00001020 l       .debug_loc     00000000 
+00001042 l       .debug_loc     00000000 
+0000105d l       .debug_loc     00000000 
+0000107f l       .debug_loc     00000000 
+0000109a l       .debug_loc     00000000 
+000010c0 l       .debug_loc     00000000 
+0000110e l       .debug_loc     00000000 
+0000112a l       .debug_loc     00000000 
+00001146 l       .debug_loc     00000000 
+00001168 l       .debug_loc     00000000 
+00001183 l       .debug_loc     00000000 
+0000119f l       .debug_loc     00000000 
+000011c1 l       .debug_loc     00000000 
+000011e3 l       .debug_loc     00000000 
+000011fe l       .debug_loc     00000000 
+00001220 l       .debug_loc     00000000 
+0000123b l       .debug_loc     00000000 
+00001256 l       .debug_loc     00000000 
+00001271 l       .debug_loc     00000000 
+00001297 l       .debug_loc     00000000 
+000012d6 l       .debug_loc     00000000 
+000012f1 l       .debug_loc     00000000 
+0000130c l       .debug_loc     00000000 
+00001327 l       .debug_loc     00000000 
+00001342 l       .debug_loc     00000000 
+0000135d l       .debug_loc     00000000 
+0000137f l       .debug_loc     00000000 
+0000139a l       .debug_loc     00000000 
+000013b5 l       .debug_loc     00000000 
+000013d2 l       .debug_loc     00000000 
+000013ef l       .debug_loc     00000000 
+00001415 l       .debug_loc     00000000 
+00001430 l       .debug_loc     00000000 
+00001452 l       .debug_loc     00000000 
+0000146d l       .debug_loc     00000000 
+00001488 l       .debug_loc     00000000 
+000014a3 l       .debug_loc     00000000 
+000014bf l       .debug_loc     00000000 
+000014db l       .debug_loc     00000000 
+000014f6 l       .debug_loc     00000000 
+00001518 l       .debug_loc     00000000 
+00001533 l       .debug_loc     00000000 
+0000156e l       .debug_loc     00000000 
+00001589 l       .debug_loc     00000000 
+000015bd l       .debug_loc     00000000 
+000015df l       .debug_loc     00000000 
+00000000 l       .debug_str     00000000 
+000008eb l       .debug_str     00000000 
+00000097 l       .debug_str     00000000 
+000002a0 l       .debug_ranges  00000000 
+0000026f l       .debug_str     00000000 
+0000020c l       .debug_str     00000000 
+00000213 l       .debug_str     00000000 
+0000021d l       .debug_str     00000000 
+00000228 l       .debug_str     00000000 
+00000233 l       .debug_str     00000000 
+00000243 l       .debug_str     00000000 
+00000252 l       .debug_str     00000000 
+00000261 l       .debug_str     00000000 
+00000ad9 l       .debug_str     00000000 
+0000016d l       .debug_str     00000000 
+0000013e l       .debug_str     00000000 
+00000154 l       .debug_str     00000000 
+000000d7 l       .debug_str     00000000 
+000000dc l       .debug_str     00000000 
+000000ce l       .debug_str     00000000 
+00000908 l       .debug_str     00000000 
+000000b2 l       .debug_str     00000000 
+0000031d l       .debug_str     00000000 
+00000587 l       .debug_str     00000000 
+00000a62 l       .debug_str     00000000 
+000002c1 l       .debug_str     00000000 
+000002b5 l       .debug_str     00000000 
+00000330 l       .debug_str     00000000 
+00000ae2 l       .debug_str     00000000 
+00000912 l       .debug_str     00000000 
+00000939 l       .debug_str     00000000 
+00000940 l       .debug_str     00000000 
+00000947 l       .debug_str     00000000 
+0000095f l       .debug_str     00000000 
+000002e7 l       .debug_str     00000000 
+000001ac l       .debug_str     00000000 
+00000197 l       .debug_str     00000000 
+0000094c l       .debug_str     00000000 
+00000964 l       .debug_str     00000000 
+00000181 l       .debug_str     00000000 
+00000350 l       .debug_str     00000000 
+00000976 l       .debug_str     00000000 
+00000573 l       .debug_str     00000000 
+00000887 l       .debug_str     00000000 
+000006a8 l       .debug_str     00000000 
+00000933 l       .debug_str     00000000 
+000006bc l       .debug_str     00000000 
+00000374 l       .debug_str     00000000 
+00000377 l       .debug_str     00000000 
+000006e9 l       .debug_str     00000000 
+000006d8 l       .debug_str     00000000 
+000006d3 l       .debug_str     00000000 
+0000035a l       .debug_str     00000000 
+000006fc l       .debug_str     00000000 
+00000356 l       .debug_str     00000000 
+0000037d l       .debug_str     00000000 
+0000097e l       .debug_str     00000000 
+0000099e l       .debug_str     00000000 
+00000a0f l       .debug_str     00000000 
+000002d3 l       .debug_str     00000000 
+00000a59 l       .debug_str     00000000 
+000008b2 l       .debug_str     00000000 
+000001f0 l       .debug_ranges  00000000 
+00000a69 l       .debug_str     00000000 
+000001d0 l       .debug_ranges  00000000 
+00000537 l       .debug_str     00000000 
+00000240 l       .debug_ranges  00000000 
+00000a5d l       .debug_str     00000000 
+00000210 l       .debug_ranges  00000000 
+00000228 l       .debug_ranges  00000000 
+000003bf l       .debug_str     00000000 
+000009ad l       .debug_str     00000000 
+000002d8 l       .debug_str     00000000 
+000002cf l       .debug_str     00000000 
+000002ab l       .debug_str     00000000 
+000009b8 l       .debug_str     00000000 
+000009cd l       .debug_str     00000000 
+000009e6 l       .debug_str     00000000 
+000003da l       .debug_str     00000000 
+000000c9 l       .debug_str     00000000 
+00000acb l       .debug_str     00000000 
+00000a76 l       .debug_str     00000000 
+00000a81 l       .debug_str     00000000 
+00000a8b l       .debug_str     00000000 
+00000258 l       .debug_ranges  00000000 
+00000a9b l       .debug_str     00000000 
+00000aae l       .debug_str     00000000 
+00000aa9 l       .debug_str     00000000 
+000009f9 l       .debug_str     00000000 
+000003ed l       .debug_str     00000000 
+00000abb l       .debug_str     00000000 
+00000a28 l       .debug_str     00000000 
+00000ac7 l       .debug_str     00000000 
+00000aef l       .debug_str     00000000 
+00000af9 l       .debug_str     00000000 
+00000409 l       .debug_str     00000000 
+0000033a l       .debug_str     00000000 
+00000360 l       .debug_str     00000000 
+0000041a l       .debug_str     00000000 
+000001f3 l       .debug_str     00000000 
+0000050a l       .debug_str     00000000 
+00000b03 l       .debug_str     00000000 
+00000270 l       .debug_ranges  00000000 
+00000288 l       .debug_ranges  00000000 
+00000a44 l       .debug_str     00000000 
+00000b0e l       .debug_str     00000000 
+00000294 l       .debug_str     00000000 
+00000ae6 l       .debug_str     00000000 
+00000acf l       .debug_str     00000000 
+000001fa l       .debug_str     00000000 
+000001ea l       .debug_str     00000000 
+000001d6 l       .debug_str     00000000 
+0000020c l       .debug_frame   00000000 
+e00002fa l       .text  00000000 
+e0000350 l       .text  00000000 
+e000036e l       .text  00000000 
+e0000382 l       .text  00000000 
+e00003d0 l       .text  00000000 
+e00002a0  w    F .text  00000004 external_irq_handler
+e00002fa g     F .text  00000056 dif_hmac_fifo_push
+00008000 g       *ABS*  00000000 _stack_len
+e00003f0 g     O .bss   00000004 test_result
+e00002a4 g     F .text  0000000e dif_hmac_init
+e00003f0 g       .bss   00000000 _bss_start
+e000a000 g       .stack 00000000 stack
+e00002b2 g     F .text  00000048 dif_hmac_mode_sha256_start
+e0000080 g       *ABS*  00000000 _entry_point
+e00003f9 g       .bss   00000000 _bss_end
+e0000382 g     F .text  0000004e dif_hmac_finish
+e00000cc g       .text  00000000 _start
+e0000114 g     F .text  0000018c main
+e0000084 g       .vectors       00000000 _vectors_end
+e0000350 g     F .text  0000001e dif_hmac_fifo_count_entries
+e0010000 g       .vectors       00000000 _stack_start
+00002000 g       *ABS*  00000000 _min_stack
+e0010010 g       *ABS*  00000000 fromhost
+00020008 g       *ABS*  00000000 tohost
+e000036e g     F .text  00000014 dif_hmac_process
+e000a000 g       .stack 00000000 _stack
+e0000000 g       .vectors       00000000 _vectors_start
+
+
+
+Disassembly of section .vectors:
+
+e0000000 <_vectors_start>:
+e0000000:       0840006f                j       e0000084 <_vectors_end>
+e0000004:       0800006f                j       e0000084 <_vectors_end>
+e0000008:       07c0006f                j       e0000084 <_vectors_end>
+e000000c:       0780006f                j       e0000084 <_vectors_end>
+e0000010:       0740006f                j       e0000084 <_vectors_end>
+e0000014:       0700006f                j       e0000084 <_vectors_end>
+e0000018:       06c0006f                j       e0000084 <_vectors_end>
+e000001c:       0680006f                j       e0000084 <_vectors_end>
+e0000020:       0640006f                j       e0000084 <_vectors_end>
+e0000024:       0600006f                j       e0000084 <_vectors_end>
+e0000028:       05c0006f                j       e0000084 <_vectors_end>
+e000002c:       2740006f                j       e00002a0 <external_irq_handler>
+e0000030:       0540006f                j       e0000084 <_vectors_end>
+e0000034:       0500006f                j       e0000084 <_vectors_end>
+e0000038:       04c0006f                j       e0000084 <_vectors_end>
+e000003c:       0480006f                j       e0000084 <_vectors_end>
+e0000040:       0440006f                j       e0000084 <_vectors_end>
+e0000044:       0400006f                j       e0000084 <_vectors_end>
+e0000048:       03c0006f                j       e0000084 <_vectors_end>
+e000004c:       0380006f                j       e0000084 <_vectors_end>
+e0000050:       0340006f                j       e0000084 <_vectors_end>
+e0000054:       0300006f                j       e0000084 <_vectors_end>
+e0000058:       02c0006f                j       e0000084 <_vectors_end>
+e000005c:       0280006f                j       e0000084 <_vectors_end>
+e0000060:       0240006f                j       e0000084 <_vectors_end>
+e0000064:       0200006f                j       e0000084 <_vectors_end>
+e0000068:       01c0006f                j       e0000084 <_vectors_end>
+e000006c:       0180006f                j       e0000084 <_vectors_end>
+e0000070:       0140006f                j       e0000084 <_vectors_end>
+e0000074:       0100006f                j       e0000084 <_vectors_end>
+e0000078:       00c0006f                j       e0000084 <_vectors_end>
+e000007c:       0080006f                j       e0000084 <_vectors_end>
+e0000080:       0060006f                j       e0000086 <reset_handler>
+
+Disassembly of section .text:
+
+e0000084 <default_exc_handler>:
+default_exc_handler():
+e0000084:       a069                    j       e000010e <sleep_loop>
+
+e0000086 <reset_handler>:
+reset_handler():
+e0000086:       4081                    li      ra,0
+e0000088:       8106                    mv      sp,ra
+e000008a:       8186                    mv      gp,ra
+e000008c:       8206                    mv      tp,ra
+e000008e:       8286                    mv      t0,ra
+e0000090:       8306                    mv      t1,ra
+e0000092:       8386                    mv      t2,ra
+e0000094:       8406                    mv      s0,ra
+e0000096:       8486                    mv      s1,ra
+e0000098:       8506                    mv      a0,ra
+e000009a:       8586                    mv      a1,ra
+e000009c:       8606                    mv      a2,ra
+e000009e:       8686                    mv      a3,ra
+e00000a0:       8706                    mv      a4,ra
+e00000a2:       8786                    mv      a5,ra
+e00000a4:       8806                    mv      a6,ra
+e00000a6:       8886                    mv      a7,ra
+e00000a8:       8906                    mv      s2,ra
+e00000aa:       8986                    mv      s3,ra
+e00000ac:       8a06                    mv      s4,ra
+e00000ae:       8a86                    mv      s5,ra
+e00000b0:       8b06                    mv      s6,ra
+e00000b2:       8b86                    mv      s7,ra
+e00000b4:       8c06                    mv      s8,ra
+e00000b6:       8c86                    mv      s9,ra
+e00000b8:       8d06                    mv      s10,ra
+e00000ba:       8d86                    mv      s11,ra
+e00000bc:       8e06                    mv      t3,ra
+e00000be:       8e86                    mv      t4,ra
+e00000c0:       8f06                    mv      t5,ra
+e00000c2:       8f86                    mv      t6,ra
+e00000c4:       00010117                auipc   sp,0x10
+e00000c8:       f3c10113                addi    sp,sp,-196 # e0010000 <_stack_start>
+
+e00000cc <_start>:
+e00000cc:       00000d17                auipc   s10,0x0
+e00000d0:       324d0d13                addi    s10,s10,804 # e00003f0 <test_result>
+e00000d4:       00000d97                auipc   s11,0x0
+e00000d8:       325d8d93                addi    s11,s11,805 # e00003f9 <_bss_end>
+e00000dc:       01bd5763                bge     s10,s11,e00000ea <main_entry>
+
+e00000e0 <zero_loop>:
+zero_loop():
+e00000e0:       /-> 000d2023            sw      zero,0(s10)
+e00000e4:       |   0d11                        addi    s10,s10,4
+e00000e6:       \-- ffaddde3            bge     s11,s10,e00000e0 <zero_loop>
+
+e00000ea <main_entry>:
+zero_loop_end():
+e00000ea:       4501                    li      a0,0
+e00000ec:       4581                    li      a1,0
+e00000ee:       026000ef                jal     ra,e0000114 <main>
+e00000f2:       c901                    beqz    a0,e0000102 <success>
+e00000f4:       c11c0537                lui     a0,0xc11c0
+e00000f8:       0561                    addi    a0,a0,24
+e00000fa:       52fd                    li      t0,-1
+e00000fc:       00552023                sw      t0,0(a0) # c11c0000 <fromhost+0xe11afff0>
+e0000100:       a039                    j       e000010e <sleep_loop>
+
+e0000102 <success>:
+success():
+e0000102:       c11c0537                lui     a0,0xc11c0
+e0000106:       0561                    addi    a0,a0,24
+e0000108:       4285                    li      t0,1
+e000010a:       00552023                sw      t0,0(a0) # c11c0000 <fromhost+0xe11afff0>
+
+e000010e <sleep_loop>:
+sleep_loop():
+e000010e:       /-> 10500073            wfi
+e0000112:       \-- bff5                        j       e000010e <sleep_loop>
+
+e0000114 <main>:
+main():
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:185
+
+// ---------------------------------------------------------------------------
+// main
+// ---------------------------------------------------------------------------
+int main(void)
+{
+e0000114:                          7179                 addi    sp,sp,-48
+e0000116:                          d606                 sw      ra,44(sp)
+e0000118:                          d422                 sw      s0,40(sp)
+e000011a:                          d226                 sw      s1,36(sp)
+e000011c:                          d04a                 sw      s2,32(sp)
+e000011e:                          ce4e                 sw      s3,28(sp)
+e0000120:                          cc52                 sw      s4,24(sp)
+e0000122:                          ca56                 sw      s5,20(sp)
+e0000124:                          c85a                 sw      s6,16(sp)
+e0000126:                          c65e                 sw      s7,12(sp)
+e0000128:                          4601                 li      a2,0
+initialize_memory():
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:76
+    titanssl_mbox->src   = (titanssl_batch_t *)TITANSSL_BATCH_SRC_BASE;
+e000012a:                          00000517             auipc   a0,0x0
+e000012e:                          2ca50513             addi    a0,a0,714 # e00003f4 <titanssl_mbox_storage.0>
+e0000132:                          e00015b7             lui     a1,0xe0001
+e0000136:                          c10c                 sw      a1,0(a0)
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:78
+    titanssl_mbox->n_src = 1 + (TITANSSL_TEST_SRC_SIZE - 1) / TITANSSL_PAGE_SIZE;
+e0000138:                          00000597             auipc   a1,0x0
+e000013c:                          2c058593             addi    a1,a1,704 # e00003f8 <titanssl_mbox_storage.2>
+e0000140:                          4685                 li      a3,1
+e0000142:                          00d58023             sb      a3,0(a1)
+e0000146:                          e00026b7             lui     a3,0xe0002
+e000014a:                          6705                 lui     a4,0x1
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:85
+        pb[j] = 0;
+e000014c:                      /-> 00d607b3             add     a5,a2,a3
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:84
+    for (size_t j = 0; j < TITANSSL_PAGE_SIZE; j++) {
+e0000150:                      |   0605                 addi    a2,a2,1
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:85
+        pb[j] = 0;
+e0000152:                      |   00078023             sb      zero,0(a5)
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:84
+    for (size_t j = 0; j < TITANSSL_PAGE_SIZE; j++) {
+e0000156:                      \-- fee61be3             bne     a2,a4,e000014c <main+0x38>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:90
+    for (size_t i = 0; i < titanssl_mbox->n_src; i++) {
+e000015a:                          0005c603             lbu     a2,0(a1)
+e000015e:                   /----- c215                 beqz    a2,e0000182 <main+0x6e>
+e0000160:                   |      4601                 li      a2,0
+e0000162:                   |      e00016b7             lui     a3,0xe0001
+e0000166:                   |      0691                 addi    a3,a3,4
+e0000168:                   |      e0002737             lui     a4,0xe0002
+e000016c:                   |      6785                 lui     a5,0x1
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:91
+        src[i].data = (uint8_t *)TITANSSL_DATA_SRC_BASE;  // stesso indirizzo
+e000016e:                   |  /-> fee6ae23             sw      a4,-4(a3) # e0000ffc <fromhost+0xffff0fec>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:92
+        src[i].n    = TITANSSL_PAGE_SIZE;
+e0000172:                   |  |   c29c                 sw      a5,0(a3)
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:90
+    for (size_t i = 0; i < titanssl_mbox->n_src; i++) {
+e0000174:                   |  |   0005c483             lbu     s1,0(a1)
+e0000178:                   |  |   0605                 addi    a2,a2,1
+e000017a:                   |  |   0492                 slli    s1,s1,0x4
+e000017c:                   |  |   06a1                 addi    a3,a3,8
+e000017e:                   |  \-- fe9668e3             bltu    a2,s1,e000016e <main+0x5a>
+e0000182:                   \----> 4601                 li      a2,0
+e0000184:                          e00017b7             lui     a5,0xe0001
+e0000188:                          e00036b7             lui     a3,0xe0003
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:97
+    dst[0].data = (uint8_t *)TITANSSL_DATA_DST_BASE;
+e000018c:                          10d7a023             sw      a3,256(a5) # e0001100 <fromhost+0xffff10f0>
+e0000190:                          02000713             li      a4,32
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:98
+    dst[0].n    = TITANSSL_TEST_DST_SIZE;
+e0000194:                          10e7a223             sw      a4,260(a5)
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:101
+        pd[j] = 0;
+e0000198:                      /-> 00d607b3             add     a5,a2,a3
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:100
+    for (size_t j = 0; j < TITANSSL_TEST_DST_SIZE; j++) {
+e000019c:                      |   0605                 addi    a2,a2,1
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:101
+        pd[j] = 0;
+e000019e:                      |   00078023             sb      zero,0(a5)
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:100
+    for (size_t j = 0; j < TITANSSL_TEST_DST_SIZE; j++) {
+e00001a2:                      \-- fee61be3             bne     a2,a4,e0000198 <main+0x84>
+titanssl_sha256():
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:114
+    titanssl_batch_t * const src   = titanssl_mbox->src;
+e00001a6:                          00052903             lw      s2,0(a0)
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:116
+    const uint32_t           n_src = titanssl_mbox->n_src;
+e00001aa:                          0005c403             lbu     s0,0(a1)
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:118
+    res = dif_hmac_init(
+e00001ae:                          c1110537             lui     a0,0xc1110
+e00001b2:                          002c                 addi    a1,sp,8
+e00001b4:                          28c5                 jal     e00002a4 <dif_hmac_init>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:122
+    res = dif_hmac_mode_sha256_start(&hmac, kHmacTransactionConfig);
+e00001b6:                          0028                 addi    a0,sp,8
+e00001b8:                          4585                 li      a1,1
+e00001ba:                          4605                 li      a2,1
+e00001bc:                          28dd                 jal     e00002b2 <dif_hmac_mode_sha256_start>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:124
+    for (size_t i = 0; i < n_src; i++) {
+e00001be:       /----------------- c429                 beqz    s0,e0000208 <main+0xf4>
+e00001c0:       |                  4a01                 li      s4,0
+e00001c2:       |                  49c1                 li      s3,16
+e00001c4:       |                  4aa1                 li      s5,8
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:125
+        const uint8_t  *kData     = src[i].data;
+e00001c6:       |  /-------------> 003a1513             slli    a0,s4,0x3
+e00001ca:       |  |               954a                 add     a0,a0,s2
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:126
+        const uint32_t  kDataSize = src[i].n;
+e00001cc:       |  |               00452b83             lw      s7,4(a0) # c1110004 <fromhost+0xe10ffff4>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:129
+        while (dp - kData < kDataSize) {
+e00001d0:       |  |  /----------- 020b8963             beqz    s7,e0000202 <main+0xee>
+e00001d4:       |  |  |            00052b03             lw      s6,0(a0)
+e00001d8:       |  |  |            4501                 li      a0,0
+e00001da:       |  |  |            845a                 mv      s0,s6
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:133
+                kDataSize - (dp - kData),
+e00001dc:       |  |  |  /-------> 40ab8633             sub     a2,s7,a0
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:131
+            res = dif_hmac_fifo_push(
+e00001e0:       |  |  |  |         0028                 addi    a0,sp,8
+e00001e2:       |  |  |  |         0054                 addi    a3,sp,4
+e00001e4:       |  |  |  |         85a2                 mv      a1,s0
+e00001e6:       |  |  |  |         2a11                 jal     e00002fa <dif_hmac_fifo_push>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:136
+            dp += sent_bytes;
+e00001e8:       |  |  |  |         4492                 lw      s1,4(sp)
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:138
+            if (res == kDifIpFifoFull) {
+e00001ea:       |  |  |  |  /----- 01551763             bne     a0,s5,e00001f8 <main+0xe4>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:141
+                    res = dif_hmac_fifo_count_entries(&hmac, &fifo_depth);
+e00001ee:       |  |  |  |  |  /-> 0028                 addi    a0,sp,8
+e00001f0:       |  |  |  |  |  |   858a                 mv      a1,sp
+e00001f2:       |  |  |  |  |  |   2ab9                 jal     e0000350 <dif_hmac_fifo_count_entries>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:142
+                } while (fifo_depth != 0);
+e00001f4:       |  |  |  |  |  |   4502                 lw      a0,0(sp)
+e00001f6:       |  |  |  |  |  \-- fd65                 bnez    a0,e00001ee <main+0xda>
+e00001f8:       |  |  |  |  \----> 9426                 add     s0,s0,s1
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:129
+        while (dp - kData < kDataSize) {
+e00001fa:       |  |  |  |         41640533             sub     a0,s0,s6
+e00001fe:       |  |  |  \-------- fd756fe3             bltu    a0,s7,e00001dc <main+0xc8>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:124
+    for (size_t i = 0; i < n_src; i++) {
+e0000202:       |  |  \----------> 0a05                 addi    s4,s4,1
+e0000204:       |  \-------------- fd3a11e3             bne     s4,s3,e00001c6 <main+0xb2>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:147
+    res = dif_hmac_process(&hmac);
+e0000208:       \----------------> 0028                 addi    a0,sp,8
+e000020a:                          2295                 jal     e000036e <dif_hmac_process>
+e000020c:                          4522                 lw      a0,8(sp)
+mmio_region_read32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:96
+ * @param offset the offset to read at, in bytes.
+ * @return the read value.
+ */
+OT_WARN_UNUSED_RESULT
+inline uint32_t mmio_region_read32(mmio_region_t base, ptrdiff_t offset) {
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+e000020e:                      /-> 410c                 lw      a1,0(a0)
+bitfield_bit32_read():
+/proc/self/cwd/./sw/device/lib/base/bitfield.h:122
+ */
+OT_WARN_UNUSED_RESULT
+inline bool bitfield_bit32_read(uint32_t bitfield,
+                                bitfield_bit32_index_t bit_index) {
+  return bitfield_field32_read(bitfield,
+                               bitfield_bit32_to_field32(bit_index)) == 0x1u;
+e0000210:                      |   8985                 andi    a1,a1,1
+titanssl_sha256():
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:148
+    while (!mmio_region_get_bit32(
+e0000212:                      \-- ddf5                 beqz    a1,e000020e <main+0xfa>
+e0000214:                          e0001437             lui     s0,0xe0001
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:155
+        res = dif_hmac_finish(&hmac, (dif_hmac_digest_t *)(dst->data));
+e0000218:                      /-> 10042583             lw      a1,256(s0) # e0001100 <fromhost+0xffff10f0>
+e000021c:                      |   0028                 addi    a0,sp,8
+e000021e:                      |   2295                 jal     e0000382 <dif_hmac_finish>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:156
+    } while (res != kDifOk);
+e0000220:                      \-- fd65                 bnez    a0,e0000218 <main+0x104>
+main():
+e0000222:                          e0001537             lui     a0,0xe0001
+check_digest():
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:165
+    const uint32_t *got      = (const uint32_t *)(titanssl_mbox->dst->data);
+e0000226:                          10052503             lw      a0,256(a0) # e0001100 <fromhost+0xffff10f0>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:170
+        if (got[i] != expected[i]) {
+e000022a:                          410c                 lw      a1,0(a0)
+e000022c:                          9ca9d637             lui     a2,0x9ca9d
+e0000230:                          c3160693             addi    a3,a2,-975 # 9ca9cc31 <fromhost+0xbca8cc21>
+e0000234:                          deadc637             lui     a2,0xdeadc
+e0000238:                /-------- 04d59163             bne     a1,a3,e000027a <main+0x166>
+e000023c:                |         4481                 li      s1,0
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:169
+    for (int i = 0; i < 8; i++) {
+e000023e:                |         00450693             addi    a3,a0,4
+e0000242:                |         00000517             auipc   a0,0x0
+e0000246:                |         18e50513             addi    a0,a0,398 # e00003d0 <kExpectedShaDigest>
+e000024a:                |         00450713             addi    a4,a0,4
+e000024e:                |         900dd537             lui     a0,0x900dd
+e0000252:                |         00d50593             addi    a1,a0,13 # 900dd00d <fromhost+0xb00ccffd>
+e0000256:                |         479d                 li      a5,7
+e0000258:                |         eef60813             addi    a6,a2,-273 # deadbeef <fromhost+0xfeacbedf>
+e000025c:                |     /-> 8526                 mv      a0,s1
+e000025e:                |  /--|-- 00f48b63             beq     s1,a5,e0000274 <main+0x160>
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:170
+        if (got[i] != expected[i]) {
+e0000262:                |  |  |   4280                 lw      s0,0(a3)
+e0000264:                |  |  |   4310                 lw      a2,0(a4)
+e0000266:                |  |  |   0691                 addi    a3,a3,4
+e0000268:                |  |  |   0711                 addi    a4,a4,4
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:169
+    for (int i = 0; i < 8; i++) {
+e000026a:                |  |  |   00150493             addi    s1,a0,1
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:170
+        if (got[i] != expected[i]) {
+e000026e:                |  |  \-- fec407e3             beq     s0,a2,e000025c <main+0x148>
+e0000272:                |  |      85c2                 mv      a1,a6
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:169
+    for (int i = 0; i < 8; i++) {
+e0000274:                |  \----> 00753513             sltiu   a0,a0,7
+e0000278:                |     /-- a021                 j       e0000280 <main+0x16c>
+e000027a:                \-----|-> 4505                 li      a0,1
+e000027c:                      |   eef60593             addi    a1,a2,-273
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:176
+    test_result = ok ? 0x900DD00Du : 0xDEADBEEFu;
+e0000280:                      \-> 00000617             auipc   a2,0x0
+e0000284:                          17060613             addi    a2,a2,368 # e00003f0 <test_result>
+e0000288:                          c20c                 sw      a1,0(a2)
+main():
+/proc/self/cwd/sw/tests/opentitan/test_3/test_3.c:188
+    initialize_memory();
+    titanssl_sha256();
+    return check_digest();
+e000028a:                          4bb2                 lw      s7,12(sp)
+e000028c:                          4b42                 lw      s6,16(sp)
+e000028e:                          4ad2                 lw      s5,20(sp)
+e0000290:                          4a62                 lw      s4,24(sp)
+e0000292:                          49f2                 lw      s3,28(sp)
+e0000294:                          5902                 lw      s2,32(sp)
+e0000296:                          5492                 lw      s1,36(sp)
+e0000298:                          5422                 lw      s0,40(sp)
+e000029a:                          50b2                 lw      ra,44(sp)
+e000029c:                          6145                 addi    sp,sp,48
+e000029e:                          8082                 ret
+
+e00002a0 <external_irq_handler>:
+external_irq_handler():
+/proc/self/cwd/sw/tests/common/utils.c:339
+
+  return i;
+}
+
+void __attribute__((weak)) external_irq_handler(void)  {
+}
+e00002a0:       30200073                mret
+
+e00002a4 <dif_hmac_init>:
+dif_hmac_init():
+/proc/self/cwd/sw/device/lib/dif/autogen/dif_hmac_autogen.c:18
+
+#include "hmac_regs.h"  // Generated.
+
+OT_WARN_UNUSED_RESULT
+dif_result_t dif_hmac_init(mmio_region_t base_addr, dif_hmac_t *hmac) {
+  if (hmac == NULL) {
+e00002a4:       /----- c581                     beqz    a1,e00002ac <dif_hmac_init+0x8>
+e00002a6:       |      4601                     li      a2,0
+/proc/self/cwd/sw/device/lib/dif/autogen/dif_hmac_autogen.c:22
+    return kDifBadArg;
+  }
+
+  hmac->base_addr = base_addr;
+e00002a8:       |      c188                     sw      a0,0(a1)
+e00002aa:       |  /-- a011                     j       e00002ae <dif_hmac_init+0xa>
+e00002ac:       \--|-> 460d                     li      a2,3
+/proc/self/cwd/sw/device/lib/dif/autogen/dif_hmac_autogen.c:25
+
+  return kDifOk;
+}
+e00002ae:          \-> 8532                     mv      a0,a2
+e00002b0:              8082                     ret
+
+e00002b2 <dif_hmac_mode_sha256_start>:
+dif_hmac_mode_sha256_start():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:132
+  return kDifOk;
+}
+
+dif_result_t dif_hmac_mode_sha256_start(const dif_hmac_t *hmac,
+                                        const dif_hmac_transaction_t config) {
+  if (hmac == NULL) {
+e00002b2:          /-------------- c105                 beqz    a0,e00002d2 <dif_hmac_mode_sha256_start+0x20>
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:137
+    return kDifBadArg;
+  }
+
+  // Read current CFG register value.
+  uint32_t reg = mmio_region_read32(hmac->base_addr, HMAC_CFG_REG_OFFSET);
+e00002b4:          |               4118                 lw      a4,0(a0)
+mmio_region_read32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:96
+e00002b6:          |               01072803             lw      a6,16(a4)
+e00002ba:          |               46b5                 li      a3,13
+dif_hmac_calculate_device_config_value():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:62
+  switch (config.message_endianness) {
+e00002bc:          |  /----------- cd89                 beqz    a1,e00002d6 <dif_hmac_mode_sha256_start+0x24>
+e00002be:          |  |            4785                 li      a5,1
+e00002c0:       /--|--|----------- 02f59b63             bne     a1,a5,e00002f6 <dif_hmac_mode_sha256_start+0x44>
+e00002c4:       |  |  |            4581                 li      a1,0
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:75
+  switch (config.digest_endianness) {
+e00002c6:       |  |  |  /-------- ca11                 beqz    a2,e00002da <dif_hmac_mode_sha256_start+0x28>
+e00002c8:       |  |  |  |  /----> 4785                 li      a5,1
+e00002ca:       +--|--|--|--|----- 02f61663             bne     a2,a5,e00002f6 <dif_hmac_mode_sha256_start+0x44>
+e00002ce:       |  |  |  |  |      4601                 li      a2,0
+e00002d0:       |  |  |  |  |  /-- a031                 j       e00002dc <dif_hmac_mode_sha256_start+0x2a>
+e00002d2:       |  \--|--|--|--|-> 468d                 li      a3,3
+e00002d4:       +-----|--|--|--|-- a00d                 j       e00002f6 <dif_hmac_mode_sha256_start+0x44>
+e00002d6:       |     \--|--|--|-> 4591                 li      a1,4
+e00002d8:       |        |  \--|-- fa65                 bnez    a2,e00002c8 <dif_hmac_mode_sha256_start+0x16>
+e00002da:       |        \-----|-> 4621                 li      a2,8
+bitfield_field32_write():
+/proc/self/cwd/./sw/device/lib/base/bitfield.h:75
+  bitfield &= ~(field.mask << field.index);
+e00002dc:       |              \-> ff087693             andi    a3,a6,-16
+/proc/self/cwd/./sw/device/lib/base/bitfield.h:76
+  bitfield |= (value & field.mask) << field.index;
+e00002e0:       |                  8dd5                 or      a1,a1,a3
+e00002e2:       |                  8dd1                 or      a1,a1,a2
+e00002e4:       |                  0025e593             ori     a1,a1,2
+mmio_region_write32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:145
+ * @param offset the offset to write at, in bytes.
+ * @param value the value to write.
+ */
+inline void mmio_region_write32(mmio_region_t base, ptrdiff_t offset,
+                                uint32_t value) {
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+e00002e8:       |                  cb0c                 sw      a1,16(a4)
+dif_hmac_mode_sha256_start():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:150
+
+  // Write new CFG register value.
+  mmio_region_write32(hmac->base_addr, HMAC_CFG_REG_OFFSET, reg);
+
+  // Begin SHA256-only operation.
+  mmio_region_nonatomic_set_bit32(hmac->base_addr, HMAC_CMD_REG_OFFSET,
+e00002ea:       |                  4108                 lw      a0,0(a0)
+mmio_region_read32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:96
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+e00002ec:       |                  494c                 lw      a1,20(a0)
+e00002ee:       |                  4681                 li      a3,0
+bitfield_field32_write():
+/proc/self/cwd/./sw/device/lib/base/bitfield.h:76
+e00002f0:       |                  0015e593             ori     a1,a1,1
+mmio_region_write32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:145
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+e00002f4:       |                  c94c                 sw      a1,20(a0)
+dif_hmac_mode_sha256_start():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:154
+                                  HMAC_CMD_HASH_START_BIT);
+
+  return kDifOk;
+}
+e00002f6:       \----------------> 8536                 mv      a0,a3
+e00002f8:                          8082                 ret
+
+e00002fa <dif_hmac_fifo_push>:
+dif_hmac_fifo_push():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:158
+
+dif_result_t dif_hmac_fifo_push(const dif_hmac_t *hmac, const void *data,
+                                size_t len, size_t *bytes_sent) {
+  if (hmac == NULL || data == NULL) {
+e00002fa:                       00153713                seqz    a4,a0
+e00002fe:                       0015b793                seqz    a5,a1
+e0000302:                       8fd9                    or      a5,a5,a4
+e0000304:                       470d                    li      a4,3
+e0000306:       /-------------- e3b9                    bnez    a5,e000034c <dif_hmac_fifo_push+0x52>
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:165
+  }
+
+  const uint8_t *data_sent = (const uint8_t *)data;
+  size_t bytes_remaining = len;
+
+  while (bytes_remaining > 0 && get_fifo_available_space(hmac) > 0) {
+e0000308:       |  /----------- ce1d                    beqz    a2,e0000346 <dif_hmac_fifo_push+0x4c>
+e000030a:       |  |            4811                    li      a6,4
+e000030c:       |  |            87b2                    mv      a5,a2
+get_status():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:20
+  return mmio_region_read32(hmac->base_addr, HMAC_STATUS_REG_OFFSET);
+e000030e:       |  |  /-------> 00052883                lw      a7,0(a0)
+mmio_region_read32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:96
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+e0000312:       |  |  |         0188a703                lw      a4,24(a7)
+dif_hmac_fifo_push():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:169
+    bool word_aligned = (uintptr_t)data_sent % sizeof(uint32_t) == 0;
+    size_t bytes_written = 0;
+
+    if (bytes_remaining < sizeof(uint32_t) || !word_aligned) {
+e0000316:       |  |  |     /-- 0107e563                bltu    a5,a6,e0000320 <dif_hmac_fifo_push+0x26>
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:166
+    bool word_aligned = (uintptr_t)data_sent % sizeof(uint32_t) == 0;
+e000031a:       |  |  |     |   0035f713                andi    a4,a1,3
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:169
+    if (bytes_remaining < sizeof(uint32_t) || !word_aligned) {
+e000031e:       |  |  |  /--|-- cf01                    beqz    a4,e0000336 <dif_hmac_fifo_push+0x3c>
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:172
+      // Individual byte writes are needed if the buffer isn't aligned or there
+      // are no more full words to write.
+      mmio_region_write8(hmac->base_addr, HMAC_MSG_FIFO_REG_OFFSET, *data_sent);
+e0000320:       |  |  |  |  \-> 00058283                lb      t0,0(a1)
+mmio_region_write8():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:112
+  ((volatile uint8_t *)base.base)[offset / sizeof(uint8_t)] = value;
+e0000324:       |  |  |  |      40088713                addi    a4,a7,1024
+e0000328:       |  |  |  |      40570023                sb      t0,1024(a4)
+e000032c:       |  |  |  |      4705                    li      a4,1
+dif_hmac_fifo_push():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:181
+      uint32_t word = read_32(data_sent);
+      mmio_region_write32(hmac->base_addr, HMAC_MSG_FIFO_REG_OFFSET, word);
+      bytes_written = sizeof(uint32_t);
+    }
+
+    bytes_remaining -= bytes_written;
+e000032e:       |  |  |  |  /-> 8f99                    sub     a5,a5,a4
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:182
+    data_sent += bytes_written;
+e0000330:       |  |  |  |  |   95ba                    add     a1,a1,a4
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:165
+  while (bytes_remaining > 0 && get_fifo_available_space(hmac) > 0) {
+e0000332:       |  |  \--|--|-- fff1                    bnez    a5,e000030e <dif_hmac_fifo_push+0x14>
+e0000334:       |  +-----|--|-- a809                    j       e0000346 <dif_hmac_fifo_push+0x4c>
+read_32():
+/proc/self/cwd/./sw/device/lib/base/memory.h:88
+  // Failing to get that particular codegen in either GCC or Clang with -O2 or
+  // -Os set shall be considered a bug in this function. The same applies to
+  // `write32()`.
+  ptr = __builtin_assume_aligned(ptr, alignof(uint32_t));
+  uint32_t val;
+  __builtin_memcpy(&val, ptr, sizeof(uint32_t));
+e0000336:       |  |     \--|-> 0005a283                lw      t0,0(a1)
+mmio_region_write32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:145
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+e000033a:       |  |        |   40088713                addi    a4,a7,1024
+e000033e:       |  |        |   40572023                sw      t0,1024(a4)
+e0000342:       |  |        |   4711                    li      a4,4
+e0000344:       |  |        \-- b7ed                    j       e000032e <dif_hmac_fifo_push+0x34>
+e0000346:       |  \----------> 4701                    li      a4,0
+dif_hmac_fifo_push():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:185
+  }
+
+  if (bytes_sent != NULL) {
+e0000348:       +-------------- c291                    beqz    a3,e000034c <dif_hmac_fifo_push+0x52>
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:186
+    *bytes_sent = len - bytes_remaining;
+e000034a:       |               c290                    sw      a2,0(a3)
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:194
+  if (bytes_remaining > 0) {
+    return kDifIpFifoFull;
+  }
+
+  return kDifOk;
+}
+e000034c:       \-------------> 853a                    mv      a0,a4
+e000034e:                       8082                    ret
+
+e0000350 <dif_hmac_fifo_count_entries>:
+dif_hmac_fifo_count_entries():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:198
+
+dif_result_t dif_hmac_fifo_count_entries(const dif_hmac_t *hmac,
+                                         uint32_t *num_entries) {
+  if (hmac == NULL || num_entries == NULL) {
+e0000350:           00153613            seqz    a2,a0
+e0000354:           0015b693            seqz    a3,a1
+e0000358:           8ed1                        or      a3,a3,a2
+e000035a:           460d                        li      a2,3
+e000035c:       /-- e699                        bnez    a3,e000036a <dif_hmac_fifo_count_entries+0x1a>
+get_status():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:20
+  return mmio_region_read32(hmac->base_addr, HMAC_STATUS_REG_OFFSET);
+e000035e:       |   4108                        lw      a0,0(a0)
+mmio_region_read32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:96
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+e0000360:       |   4d08                        lw      a0,24(a0)
+e0000362:       |   4601                        li      a2,0
+bitfield_field32_read():
+/proc/self/cwd/./sw/device/lib/base/bitfield.h:56
+  return (bitfield >> field.index) & field.mask;
+e0000364:       |   8111                        srli    a0,a0,0x4
+e0000366:       |   897d                        andi    a0,a0,31
+dif_hmac_fifo_count_entries():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:202
+    return kDifBadArg;
+  }
+
+  *num_entries = get_fifo_entry_count(hmac);
+e0000368:       |   c188                        sw      a0,0(a1)
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:205
+
+  return kDifOk;
+}
+e000036a:       \-> 8532                        mv      a0,a2
+e000036c:           8082                        ret
+
+e000036e <dif_hmac_process>:
+dif_hmac_process():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:224
+
+  return kDifOk;
+}
+
+dif_result_t dif_hmac_process(const dif_hmac_t *hmac) {
+  if (hmac == NULL) {
+e000036e:       /-- c901                        beqz    a0,e000037e <dif_hmac_process+0x10>
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:228
+    return kDifBadArg;
+  }
+
+  mmio_region_nonatomic_set_bit32(hmac->base_addr, HMAC_CMD_REG_OFFSET,
+e0000370:       |   410c                        lw      a1,0(a0)
+mmio_region_read32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:96
+e0000372:       |   49d0                        lw      a2,20(a1)
+e0000374:       |   4501                        li      a0,0
+bitfield_field32_write():
+/proc/self/cwd/./sw/device/lib/base/bitfield.h:76
+  bitfield |= (value & field.mask) << field.index;
+e0000376:       |   00266613            ori     a2,a2,2
+mmio_region_write32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:145
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+e000037a:       |   c9d0                        sw      a2,20(a1)
+dif_hmac_process():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:231
+                                  HMAC_CMD_HASH_PROCESS_BIT);
+  return kDifOk;
+}
+e000037c:       |   8082                        ret
+e000037e:       \-> 450d                        li      a0,3
+e0000380:           8082                        ret
+
+e0000382 <dif_hmac_finish>:
+dif_hmac_finish():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:235
+
+dif_result_t dif_hmac_finish(const dif_hmac_t *hmac,
+                             dif_hmac_digest_t *digest) {
+  if (hmac == NULL || digest == NULL) {
+e0000382:                 00153613              seqz    a2,a0
+e0000386:                 0015b693              seqz    a3,a1
+e000038a:                 8ed1                  or      a3,a3,a2
+e000038c:                 460d                  li      a2,3
+e000038e:       /-------- ee9d                  bnez    a3,e00003cc <dif_hmac_finish+0x4a>
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:240
+    return kDifBadArg;
+  }
+
+  // Check if hmac_done is asserted.
+  bool done = mmio_region_get_bit32(hmac->base_addr, HMAC_INTR_STATE_REG_OFFSET,
+e0000390:       |         4110                  lw      a2,0(a0)
+mmio_region_read32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:96
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+e0000392:       |         4218                  lw      a4,0(a2)
+e0000394:       |         4e14                  lw      a3,24(a2)
+bitfield_bit32_read():
+/proc/self/cwd/./sw/device/lib/base/bitfield.h:122
+                               bitfield_bit32_to_field32(bit_index)) == 0x1u;
+e0000396:       |         8b05                  andi    a4,a4,1
+dif_hmac_finish():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:247
+
+  // Check if fifo_empty is asserted.
+  bool fifo_empty = mmio_region_get_bit32(
+      hmac->base_addr, HMAC_STATUS_REG_OFFSET, HMAC_STATUS_FIFO_EMPTY_BIT);
+
+  if (done) {
+e0000398:       |     /-- e709                  bnez    a4,e00003a2 <dif_hmac_finish+0x20>
+bitfield_bit32_read():
+/proc/self/cwd/./sw/device/lib/base/bitfield.h:122
+e000039a:       |     |   8a85                  andi    a3,a3,1
+e000039c:       |     |   4639                  li      a2,14
+dif_hmac_finish():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:251
+    // Clear hmac_done.
+    mmio_region_nonatomic_set_bit32(hmac->base_addr, HMAC_INTR_STATE_REG_OFFSET,
+                                    HMAC_INTR_STATE_HMAC_DONE_BIT);
+  } else if (!fifo_empty) {
+e000039e:       |  /--|-- e691                  bnez    a3,e00003aa <dif_hmac_finish+0x28>
+e00003a0:       +--|--|-- a035                  j       e00003cc <dif_hmac_finish+0x4a>
+mmio_region_read32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:96
+e00003a2:       |  |  \-> 4214                  lw      a3,0(a2)
+bitfield_field32_write():
+/proc/self/cwd/./sw/device/lib/base/bitfield.h:76
+  bitfield |= (value & field.mask) << field.index;
+e00003a4:       |  |      0016e693              ori     a3,a3,1
+mmio_region_write32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:145
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+e00003a8:       |  |      c214                  sw      a3,0(a2)
+e00003aa:       |  \----> 06000613              li      a2,96
+e00003ae:       |         04000693              li      a3,64
+dif_hmac_finish():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:260
+  // Read the digest in reverse to preserve the numerical value.
+  // The least significant word is at HMAC_DIGEST_7_REG_OFFSET.
+  // From the HWIP spec: "Order of the digest is: digest[255:0] = {DIGEST0,
+  // DIGEST1, DIGEST2, ... , DIGEST7};"
+  for (size_t i = 0; i < ARRAYSIZE(digest->digest); ++i) {
+    digest->digest[i] = mmio_region_read32(
+e00003b2:       |     /-> 4118                  lw      a4,0(a0)
+mmio_region_read32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:96
+  return ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)];
+e00003b4:       |     |   9732                  add     a4,a4,a2
+e00003b6:       |     |   4318                  lw      a4,0(a4)
+dif_hmac_finish():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:260
+e00003b8:       |     |   c198                  sw      a4,0(a1)
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:259
+  for (size_t i = 0; i < ARRAYSIZE(digest->digest); ++i) {
+e00003ba:       |     |   1671                  addi    a2,a2,-4
+e00003bc:       |     |   0591                  addi    a1,a1,4
+e00003be:       |     \-- fed61ae3              bne     a2,a3,e00003b2 <dif_hmac_finish+0x30>
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:267
+  }
+
+  // Disable HMAC and SHA256 until the next transaction, clearing the current
+  // digest.
+  uint32_t device_config =
+      mmio_region_read32(hmac->base_addr, HMAC_CFG_REG_OFFSET);
+e00003c2:       |         4108                  lw      a0,0(a0)
+mmio_region_read32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:96
+e00003c4:       |         490c                  lw      a1,16(a0)
+e00003c6:       |         4601                  li      a2,0
+bitfield_field32_write():
+/proc/self/cwd/./sw/device/lib/base/bitfield.h:75
+  bitfield &= ~(field.mask << field.index);
+e00003c8:       |         99f1                  andi    a1,a1,-4
+mmio_region_write32():
+/proc/self/cwd/./sw/device/lib/base/mmio.h:145
+  ((volatile uint32_t *)base.base)[offset / sizeof(uint32_t)] = value;
+e00003ca:       |         c90c                  sw      a1,16(a0)
+dif_hmac_finish():
+/proc/self/cwd/sw/device/lib/dif/dif_hmac.c:275
+  device_config =
+      bitfield_bit32_write(device_config, HMAC_CFG_HMAC_EN_BIT, false);
+  mmio_region_write32(hmac->base_addr, HMAC_CFG_REG_OFFSET, device_config);
+
+  return kDifOk;
+}
+e00003cc:       \-------> 8532                  mv      a0,a2
+e00003ce:                 8082                  ret
